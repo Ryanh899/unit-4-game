@@ -68,6 +68,7 @@ function win (num1, num2) {
 function reset (func) {
     if (func) {
         userNumber = 0; 
+        $('#userNumber').html(`Your score: ${userNumber}`)
         buttonNumber() ;
         goalNumber(getRandomInt(19, 120)); 
     }
