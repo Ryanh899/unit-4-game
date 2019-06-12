@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-   <div id="randomNumber"></div>
-    <button type="button" id="button-1" class="btn btn-primary">Primary</button>
-    <button type="button" id="button-2" class="btn btn-primary">Primary</button>
-    <button type="button" id="button-3" class="btn btn-primary">Primary</button>
-    <button type="button" id="button-4" class="btn btn-primary">Primary</button>
 
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script src="./assets/javascript/game.js"></script>
+<body>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4">Chrystal Collector</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>You win by getting your score to match the "goal" number</p>
+                <p>Increase your score by clicking a button, each button has it's own unique score</p>
+            </div>
+        </div>
+    </div>
+    <hr class="p-.5">>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="container p-1">
+                <div id="randomNumber"></div>
+                <div id="userNumber">Your Score: 0</div>
+                <div id="wins">Wins: 0</div>
+                <div id="losses">Losses: 0</div>
+            </div>
+                <button type="button" id="button-1" class="btn btn-primary m-1">Button-1</button>
+                <button type="button" id="button-2" class="btn btn-primary m-1">Button-2</button>
+                <button type="button" id="button-3" class="btn btn-primary m-1">Button-3</button>
+                <button type="button" id="button-4" class="btn btn-primary m-1">Button-4</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
 </body>
+
 </html>
