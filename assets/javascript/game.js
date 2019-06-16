@@ -56,10 +56,14 @@ function win (num1, num2) {
     if (num1 === num2){
         wins++ ;  
         $('#wins').html(`Wins: ${wins}`)
+         $('#result').html(`You Win!`); 
+         setTimeout(function(){$('#result').html(''); }, 3000);
         reset(win)
     } else if (num1 > num2) {
         losses++ ;
         $('#losses').html(`Losses: ${losses}`) 
+        $('#result').html(`You Lose!`);
+        setTimeout(function(){$('#result').html(''); }, 3000);
         reset(win)
     }
 }
